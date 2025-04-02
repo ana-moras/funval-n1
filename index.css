@@ -1,7 +1,36 @@
-.card {
-    background-color: rgb(178, 150, 112);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
-li {
+header {
+    text-align: right;
+    margin-right: 2cm;
+}
+
+.card {
+    background-color: rgb(178, 150, 112);
+    width: 15cm;
+    margin: auto;
+}
+
+a {
+    list-style: none;
     text-decoration: none;
+    color: white;
+
+}
+
+
+
+body {
+
+    background-color: rgb(241, 218, 188);
+
+}
+
+main {
+    text-align: center;
 }
