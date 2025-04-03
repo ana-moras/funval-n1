@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+position static esta x defecto
+inset para centrar la pocision. 
+
+*/
+
+
+/*
+absolute 
+relative
+*/
+
+.box1,
+.box2,
+.box3 {
+    width: 200px;
+    height: 200px;
+    border: solid 2px blue;
+}
+
+.item1,
+.item2,
+.item3 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.box1 {
+    position: relative;
+}
+
+.item1 {
+    position: absolute;
+    right: 90%;
+
+}
+
+/* fixed: x defecto si no agrego pocision queda fijo donde esta*/
+.item2 {
+    position: fixed;
+    right: 30%;
+    top: 20%;
+}
+
+/*sticky: su limite de movimiento es su contenedor padre*/
+
+.item3 {
+    position: sticky;
+    left: 10%;
+    top: 10%;
+}
