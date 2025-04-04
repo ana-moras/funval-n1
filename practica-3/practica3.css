@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+
+
+    section {
+        background-color: antiquewhite;
+
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+nav {
+    font-size: 20px;
+    background-color: rgb(179, 136, 136);
+    gap: 9%;
+}
+
+footer {
+    background-color: antiquewhite;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    height: 5%;
+    text-align: center;
+}
