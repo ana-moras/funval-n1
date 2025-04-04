@@ -5,14 +5,12 @@
     text-decoration: none;
 }
 
-.nav {
+.links {
     font-size: 12px;
     height: 45px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 65px;
+    gap: 30px;
 
 }
 
@@ -24,4 +22,9 @@ a img {
 .nav a {
     text-decoration: none;
     color: black;
+}
+
+article {
+    display: flex;
+    bottom: 50%;
 }

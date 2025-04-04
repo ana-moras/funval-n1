@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+body {
+    border: 5px solid rgb(241, 7, 7);
+    height: 100%;
+
+}
+
+header {
+    border: solid 10px blue;
+    height: 150px;
+
+}
+
+nav {
+    border: solid 5px orange;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+picture,
+ul {
+    border: solid 5px green;
+    height: 100%;
+
+
+}
+
+picture {
+    width: 300px;
+}
+
+ul {
+    width: 40%;
+    display: flex;
+}
+
+li {
+    border: solid 5px red;
+    width: 25%;
+    height: 80%;
+    list-style: none;
+}
+
+main {
+    border: solid 5px rgb(45, 219, 25);
+    height: 100%;
+
+}
+
+
+section {
+    border: solid 5px rgb(12, 12, 12);
+    width: 50%;
+    height: 40%;
+    display: flex;
+}

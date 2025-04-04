@@ -1,7 +1,5 @@
 img {
-
-    border-radius: 4%;
-
+    border-radius: 2%;
 }
 
 .divi {
@@ -12,16 +10,32 @@ img {
 body {
     width: 1440px;
     background-color: hsl(30, 54%, 90%);
+    line-height: 30px;
 
 }
 
 main {
-    border-radius: 10px;
+    border-radius: 15px;
     width: 50%;
     margin: 40px auto;
-    padding: 20px;
+    padding: 40px;
     background-color: white;
+
+    p,
+    li {
+        font-size: 20px;
+    }
+
 }
+
+h1 {
+    color: rgb(10, 10, 10);
+    font-size: 50px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 #last {
     p {
@@ -31,13 +45,21 @@ main {
 
 #box {
     margin: 20px auto;
-
     width: 100%;
     background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
 
     ul {
         padding: 0px 20px 20px 50px;
 
+        ::marker {
+            color: hsl(332, 51%, 32%);
+        }
+    }
+
+    h2 {
+        color: hsl(332, 51%, 32%);
+        margin: 20px;
     }
 
     .text {
@@ -49,7 +71,12 @@ main {
 h2 {
     color: hsl(14, 45%, 36%);
     padding-left: 2%;
-    font-size: 25px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+
 }
 
 .text {
@@ -79,13 +106,16 @@ h2 {
     }
 
     .nombre {
-        color: black;
-    }
+        color: hsl(30, 10%, 34%);
 
-    .num {
-        color: brown;
-
+        font-size: 20px;
     }
+}
+
+.num {
+    color: brown;
+    font-size: 20px;
+
 }
 
 .text {
@@ -93,8 +123,22 @@ h2 {
     font-size: 25px;
 }
 
-h1 {
-    color: black;
-    font-size: 40px;
 
+li {
+    padding-left: 15px;
+}
+
+li::marker {
+
+    color: hsl(14, 45%, 36%);
+
+}
+
+ol li::marker {
+    font-size: 20px;
+}
+
+p,
+li {
+    color: hsl(30, 10%, 34%);
 }
