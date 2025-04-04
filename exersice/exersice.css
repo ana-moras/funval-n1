@@ -35,7 +35,7 @@ ul {
 }
 
 picture {
-    width: 300px;
+    width: 100px;
 }
 
 ul {
@@ -51,7 +51,7 @@ li {
 }
 
 main {
-    border: solid 5px rgb(45, 219, 25);
+    border: solid 5px rgb(32, 241, 9);
     height: 100%;
 
 }

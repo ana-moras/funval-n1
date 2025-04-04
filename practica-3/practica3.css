@@ -22,11 +22,13 @@ header {
     font-size: 20px;
     background-color: rgb(179, 136, 136);
     display: flex;
-    gap: 3%;
+    gap: 9%;
     padding-left: 18px;
 
 
 }
+
+
 
 footer {
     background-color: antiquewhite;
