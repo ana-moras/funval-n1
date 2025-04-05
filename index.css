@@ -18,7 +18,8 @@ ul {
 }
 
 section>ul {
-    height: 100px;
+    height: 300px;
+    border: solid 3px rgb(178, 150, 112);
 }
 
 
@@ -28,6 +29,8 @@ section>ul {
     margin: auto;
 }
 
+.card3,
+.card4,
 .card2 {
     background-color: rgb(178, 150, 112);
     width: 15cm;
