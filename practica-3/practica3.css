@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
-
-
 
 header {
     position: fixed;
@@ -15,6 +14,7 @@ header {
 
         font-size: 30px;
         text-align: center;
+
     }
 }
 
@@ -28,13 +28,66 @@ header {
 
 }
 
-
-
 footer {
     background-color: antiquewhite;
     width: 100%;
-    position: fixed;
+    position: flex;
     bottom: 0%;
-    height: 5%;
+    height: 60px;
     text-align: center;
+}
+
+.box1 {
+
+    background-color: bisque;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    div {
+
+        width: 45%;
+        height: 300px;
+        margin-left: 40px;
+        margin-bottom: 100px;
+
+    }
+}
+
+
+
+.box2 {
+    background-color: azure;
+    height: 400px;
+    width: 100%;
+
+    align-content: end;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.box3 {
+    background-color: beige;
+    height: 70%;
+    width: 95%;
+    margin-left: 2%;
+    margin-bottom: 3%;
+    display: flex;
+    align-items: center;
+
+}
+
+ul {
+
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+
 }

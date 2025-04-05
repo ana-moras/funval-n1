@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Alineación</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .botones {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            /* Cambia a column para probar el otro caso */
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background-color: #f0f0f0;
+            width: 100%;
+            height: 200px;
+            transition: all 0.3s ease;
+        }
+
+        .item {
+            width: 60px;
+            height: 60px;
+            background-color: steelblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="botones">
+        <strong>Justify (Eje principal):</strong><br>
+        <button onclick="cambiarJustify('flex-start')">Inicio</button>
+        <button onclick="cambiarJustify('center')">Centro</button>
+        <button onclick="cambiarJustify('flex-end')">Final</button>
+        <button onclick="cambiarJustify('space-between')">Entre</button>
+        <button onclick="cambiarJustify('space-around')">Alrededor</button>
+    </div>
+
+    <div class="botones">
+        <strong>Align (Eje cruzado):</strong><br>
+        <button onclick="cambiarAlign('flex-start')">Arriba</button>
+        <button onclick="cambiarAlign('center')">Centro</button>
+        <button onclick="cambiarAlign('flex-end')">Abajo</button>
+        <button onclick="cambiarAlign('stretch')">Estirar</button>
+    </div>
+
+    <div class="contenedor" id="contenedor">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <script>
+        const contenedor = document.getElementById("contenedor");
+
+        function cambiarJustify(valor) {
+            contenedor.style.justifyContent = valor;
+        }
+
+        function cambiarAlign(valor) {
+            contenedor.style.alignItems = valor;
+        }
+    </script>
+</body>
+
+</html>
