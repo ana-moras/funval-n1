@@ -10,10 +10,29 @@ header {
     margin-right: 2cm;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+section>ul {
+    height: 100px;
+}
+
+
 .card {
     background-color: rgb(178, 150, 112);
     width: 15cm;
     margin: auto;
+}
+
+.card2 {
+    background-color: rgb(178, 150, 112);
+    width: 15cm;
+    margin: auto;
+
 }
 
 a {
@@ -33,4 +52,13 @@ body {
 
 main {
     text-align: center;
+}
+
+footer>section {
+    border: solid 2px rgb(81, 39, 6);
+    height: 5%;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    margin-bottom: 4%;
 }
