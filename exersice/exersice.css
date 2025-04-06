@@ -3,17 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     background-color: beige;
-}
-
-body {
-    border: 5px solid rgb(241, 7, 7);
-    height: 100%;
+    border-radius: 5px;
 
 }
+
 
 header {
-    border: solid 10px blue;
-    height: 150px;
+    border: solid 5px blue;
+    height: 80px;
 
 }
 
@@ -21,8 +18,7 @@ nav {
     border: solid 5px orange;
     height: 100%;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
 
 }
 
@@ -30,17 +26,16 @@ picture,
 ul {
     border: solid 5px green;
     height: 100%;
+    width: 50px;
+    display: flex;
 
-
-}
-
-picture {
-    width: 100px;
 }
 
 ul {
     width: 40%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 li {
@@ -50,16 +45,108 @@ li {
     list-style: none;
 }
 
-main {
-    border: solid 5px rgb(32, 241, 9);
-    height: 100%;
+.part1 {
+    border: solid 5px lightblue;
+    width: 100%;
+    height: 450px;
+    display: flex;
+
+    .box1,
+    .box2 {
+        border: solid 5px green;
+        width: 50%;
+        height: 100%;
+    }
+
+}
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
 
 }
 
 
-section {
-    border: solid 5px rgb(12, 12, 12);
-    width: 50%;
-    height: 40%;
+.left {
+    border: 3px solid red;
+    height: 6rem;
+    width: 5rem;
+}
+
+.box2 {
     display: flex;
+    justify-content: center;
+}
+
+.right {
+    border: 5px solid red;
+    height: 6rem;
+    width: 10rem;
+    inset: 0;
+    margin: auto;
+}
+
+.part2 {
+    border: 5px solid lightblue;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+
+    .boxbottom1,
+    .boxbottom2 {
+        border: 5px solid green;
+        width: 50%;
+        height: 95%;
+    }
+}
+
+.boxbottom1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1,
+    p {
+        border: 5px solid red;
+        height: 50px;
+        width: 50px;
+        margin: 20px;
+    }
+
+    p {
+        width: 100px;
+    }
+}
+
+.boxbottom2 {
+    display: flex;
+    justify-content: center;
+    inset: 0;
+    margin: auto;
+
+    img {
+        border: 5px solid red;
+        height: 50px;
+        width: 50px;
+    }
+}
+
+footer {
+    border: 3px solid lightblue;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .fut1,
+    .fut2 {
+        border: 3px solid green;
+        height: 150px;
+        width: 150px;
+        margin: 50px;
+    }
 }
