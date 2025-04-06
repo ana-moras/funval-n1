@@ -123,9 +123,7 @@ li {
 
 .boxbottom2 {
     display: flex;
-    justify-content: center;
-    inset: 0;
-    margin: auto;
+
 
     img {
         border: 5px solid red;
