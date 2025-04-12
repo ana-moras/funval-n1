@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./practice-dm.css">
+    <script src="./practice-dm.js" defer></script>
 
 </head>
 
 <body>
 
-    <header class=" h-[69px] ">
-        <nav class="h-full flex justify-between items-center px-5">
+    <header class=" h-[69px]">
+        <nav class="h-full flex justify-between items-center px-5 ">
             <div><img src="./resource-dm/cib_dribbble.png" width="36px" alt=""></div>
 
             <div class="flex justify-around items-center w-35">
-                <div class="w-[24px] h-[24px]">
-                    🌚
-                </div>
+                <button id="dark" class="flex ">
+                    <div class="w-[24px] h-[24px] dark:hidden">
+                        🌚
+                    </div>
+                    <div class="w-[24px] h-[24px] hidden dark:block">
+                        ☀️
+                    </div>
+                </button>
+
                 <div> <a class="flex  items-center justify-center bg-[#f2f2f7] rounded-2xl w-[78px] h-[28px] "
                         href="">MENU</a>
                 </div>
@@ -26,25 +33,34 @@
         </nav>
     </header>
     <main>
-        <section class="h-[744px]">
-            <div>
-                <img src="./resource-dm/PP Image 2 1.png" alt="">
+        <section class="h-[812px]  dark:bg-blue-950">
+            <div class=" border border-amber-800 h-100 flex flex-col justify-center items-center ">
+                <img src="./resource-dm/PP Image 2 1.png" width="50px" alt="">
                 <p>Hi, I’m Nanang Prasetya</p>
-                <h1>UI/UX Designer and
-                    Software Development</h1>
-                <p>I’m from Indonesia and I have been working (Freelance) as a Software Development especially in the
+                <h1 class="text-2xl border flex flex-wrap  w-20">UI/UX Designer and
+                    Software Development
+                </h1>
+
+                <p class="flex flex-col items-center justify-center w-[326px] text- 
+                [24px] border ">I’m from
+                    Indonesia and I
+                    have been working
+                    (Freelance)
+                    as a
+                    Software
+                    Development especially in
+                    the
                     UI/UX Designer and Development for more than 2 year at
-                    <a href="">Panemu</a>company.
+                    <a href="">Panemu indonesia</a>company.
                 </p>
-                <buttom>SAY HELLO</buttom>
+                <buttom class="bg-[#3040E5] w-[164px] h-[40px]">SAY HELLO</buttom>
                 <buttom>dowload cv</buttom>
             </div>
 
-
         </section>
 
-    </main>
-    <footer></footer>
+        <div></div>
+
 </body>
 
 </html>
