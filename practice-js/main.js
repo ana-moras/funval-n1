@@ -10,7 +10,6 @@ while (true) {
     } else {
         alert("informacion incorrecta");
     }
-
 } */
 /* numero positivo negativo cero */
 /* alert("Bienvenido")
@@ -32,8 +31,7 @@ while (true) {
         if (contador > 3) {
             alert("intentos superados")
             break;
-
-        }
+                    }
     }
 }
  */
@@ -66,24 +64,46 @@ switch (day) {
         break;
 } */
 
-let numero = prompt("ingrese un numero")
+/* let numero = prompt("ingrese un numero")
 if (numero % 2 === 0) {
     alert("su numero es par")
-} else if (numero % 2 != 0 || numero % 2 === -1) {
+} else if (numero % 2 === 1 || numero % 2 === -1) {
     alert("su numero es inpar")
-}
-
-/* let notas = prompt("ingrese su nota")
-if (notas <= 10) {
-    alert("desaprobado")
-
-} else if (notas >= 10 && notas <= 13) {
-    alert("regular")
-
-} else if (notas >= 14 && notas <= 17) {
-    alert("bueno")
-
-} else if (notas > 18) {
-    alert("exelente")
-
 } */
+
+/* while (true) {
+    let notas = parseFloat(prompt("ingrese su nota"));
+    if (notas > 0 && notas <= 10) {
+        alert("desaprobado");
+        break;
+    } else if (notas >= 10 && notas < 13) {
+        alert("regular");
+        break;
+    } else if (notas >= 13 && notas < 17) {
+        alert("bueno");
+        break;
+    } else if (notas >= 17 && notas <= 20) {
+        alert("exelente");
+        break;
+    } else if (notas > 20 || notas < 0) {
+        alert("invalido volver intentar");
+    } else {
+        alert("ingrese un numero")
+    }
+} */
+
+/*  let num = parseInt(prompt("ingrese la tabla que desea ver"))
+    console.log("la tabla del" + num +"es:")
+for (let index = 1; index < 13; index++) {
+    console.log(num+"x" + index + "=" + num * index)
+} */
+/* let contador;
+for (let index = 0; index <= 100; index++) {
+    contador = contador + index
+}
+console.log(suma); */
+
+function SumarDosNumeros(Num1, Num2) {
+    return Num1 + Num2
+}
+console.log(SumarDosNumeros(32, 23));
