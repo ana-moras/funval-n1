@@ -42,14 +42,16 @@ function calculadora() {
     }
 
     function sumar(a, b) {
+        sumar = a + b
 
     }
     function restar(a, b) {
+        restar = a - b
 
     } function multiplicar(a, b) {
-
+        multiplicar = a * b
     } function divir(a, b) {
-
+        dividir = a / b
 
     }
 }
