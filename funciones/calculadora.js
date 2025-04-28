@@ -9,12 +9,10 @@ function calculadora() {
          4 - divir
          5 - salir`
         )
-
         if (op != 5) {
             let a = prompt("ingrese el primer numero")
             let b = prompt("ingrese el segun numero")
         }
-
         switch (op) {
             case "1":
                 alert("el resultado es " + sumar(a, b));

@@ -1,9 +1,4 @@
 
-let btAlert = document.querySelector("#alert")
-btAlert.addEventListener("click", alerta);
-function alerta() {
-    alert("hola");
-}
 const auto = {
     marca: "Toyota",
     modelo: "Corolla",
@@ -49,9 +44,22 @@ const auto = {
         return this.precio * 0.9 ** (añoActual - this.año);
     },
 };
-let caracr = document.querySelector("#caracteristicas");
+/* let caracr = document.querySelector("#caracteristicas");
 
 for (let i = 0; i < auto.length; i++) { }
 const parrafo2 = document.createElement("p");
-parrafo2.textContent = ""
+parrafo2.textContent = auto
 document.body.appendChild(parrafo2)
+
+ */
+const contenedor = document.getElementById('contenedorAuto');
+Object.entries({
+    Marca: auto.marca,
+    Modelo: auto.modelo,
+    Año: auto.año,
+    Color: auto.color,
+    Kilometraje: `${auto.kilometraje} km`,
+    Combustible: auto.combustible,
+    Transmisión: auto.transmisión,
+    Precio: `$${auto.precio}`
+})
