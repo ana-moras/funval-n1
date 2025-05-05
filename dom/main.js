@@ -52,14 +52,4 @@ parrafo2.textContent = auto
 document.body.appendChild(parrafo2)
 
  */
-const contenedor = document.getElementById('contenedorAuto');
-Object.entries({
-    Marca: auto.marca,
-    Modelo: auto.modelo,
-    Año: auto.año,
-    Color: auto.color,
-    Kilometraje: `${auto.kilometraje} km`,
-    Combustible: auto.combustible,
-    Transmisión: auto.transmisión,
-    Precio: `$${auto.precio}`
-})
+console.log(auto);
