@@ -26,17 +26,14 @@ boton2.addEventListener("click", function () {
  */
 /* let parrafo = document.querySelector("#parrafoloco");
 parrafo.addEventListener("click", function () {
-
-})
+}) */
 
 let formulario = document.querySelector("#elias");
-
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
     let ana = new FormData(formulario)
     console.log(ana.get("nombre"));
-}) */
-
+})
 /* let form = document.querySelector("#juego");
 form.addEventListener("submit", function (evento) {
     evento.preventDefault();
@@ -81,7 +78,7 @@ caja.addEventListener("mousemove", function (evento) {
        }
        dia = !dia
    }) */
-let megainput = document.querySelector("#inputCadena");
+/* let megainput = document.querySelector("#inputCadena");
 
 let cuenta = document.querySelector("#supercontador");
 
@@ -90,9 +87,4 @@ megainput.addEventListener("keyup", function (evento) {
     contador = evento.target.value.lenght;
     cuenta.textContent = `contador: $(contador)`;
 
-})
-/*  input de filtrado
-ul, li
- 
-
-*/
+})*/

@@ -158,7 +158,7 @@ for (let i = 0; i < estudiantes.length; i++) {
     console.log(`èl estudiante ${estudiantes.nombre} 
         sabe los lenguajes de programacion ${estudiantes[i].lenguajes}`)
 } */
-
+/* 
 let profesores = [
     {
         nombre: "kevin",
@@ -191,4 +191,4 @@ const personas = [
 
 let nombres = personas.map((nombress) => {
     console.log(nombress)
-})
+}) */
