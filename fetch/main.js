@@ -7,8 +7,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
                 `<li>${element.name}</li>`
 
         });
-    })
- */
+    }) */
+
 
 let tabla = document.querySelector("#tabla-cuerpo");
 fetch("https://jsonplaceholder.typicode.com/users")
