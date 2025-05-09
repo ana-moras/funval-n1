@@ -44,12 +44,32 @@ const auto = {
         return this.precio * 0.9 ** (añoActual - this.año);
     },
 };
-/* let caracr = document.querySelector("#caracteristicas");
 
-for (let i = 0; i < auto.length; i++) { }
-const parrafo2 = document.createElement("p");
-parrafo2.textContent = auto
-document.body.appendChild(parrafo2)
+auto.historialMantenimiento.forEach(m => {
+    console.log(`Fecha: ${m.fecha}, Servicio: ${m.servicio}, Costo: $${m.costo}`);
+});
 
- */
-console.log(auto);
+const infoAuto = document.getElementById("info-auto");
+const claves = ["marca", "modelo", "año", "color", "kilometraje", "combustible", "transmisión", "precio"];
+
+claves.forEach(clave => {
+    const card = document.createElement("div");
+    card.className = "bg-white shadow rounded-xl p-4";
+    card.innerHTML = `<h4 class="font-semibold capitalize">${clave}:</h4><p>${auto[clave]}</p>`;
+    infoAuto.appendChild(card);
+});
+
+// 👉 Mostrar historial de mantenimiento
+const mantenimientos = document.getElementById("mantenimientos");
+
+auto.historialMantenimiento.forEach(m => {
+    const card = document.createElement("div");
+    card.className = "bg-gray-100 rounded-xl p-4 shadow";
+    card.innerHTML = `
+    <p><strong>Fecha:</strong> ${m.fecha}</p>
+    <p><strong>Servicio:</strong> ${m.servicio}</p>
+    <p><strong>Costo:</strong> $${m.costo}</p>
+  `;
+    mantenimientos.appendChild(card);
+});
+

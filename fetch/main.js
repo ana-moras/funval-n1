@@ -9,14 +9,14 @@ fetch("https://jsonplaceholder.typicode.com/users")
         });
     })
  */
-/* 
+
 let tabla = document.querySelector("#tabla-cuerpo");
 fetch("https://jsonplaceholder.typicode.com/users")
-    .then((Response) => Response.json())
-    .then((data) => {
-        {
-            data.forEach((element) => {
-                tabla.innerHTML += `<tr
+  .then((Response) => Response.json())
+  .then((data) => {
+    {
+      data.forEach((element) => {
+        tabla.innerHTML += `<tr
             class=“bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200”
           >
             <th
@@ -29,10 +29,10 @@ fetch("https://jsonplaceholder.typicode.com/users")
             <td class=“px-6 py-4”>${element.website}</td>
             <td class=“px-6 py-4”>${element.company.name}</td>
           </tr>`;
-            });
-        }
-    })
-    .catch((error) => console.log(error)) */
+      });
+    }
+  })
+  .catch((error) => console.log(error))
 
 /*   .catch((error) => console.log(error));
 jsonplaceholder.typicode.com
